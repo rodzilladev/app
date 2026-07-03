@@ -1,0 +1,27 @@
+name = "app"
+main = "worker.js"
+compatibility_date = "2026-05-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "app-trancendencia"
+database_id = "4d95aba2-8769-427e-b77a-e27747180f82"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "890ba791d7fd4ae29a7b3f08c3526105"
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[env.staging]
+name = "app-staging"
+
+[[env.staging.d1_databases]]
+binding = "DB"
+database_name = "app-trancendencia-staging"
+database_id = "a4f6c846-e6a5-4db7-8fe3-88d5c922eabe"
+
+[[env.staging.kv_namespaces]]
+binding = "CACHE"
+id = "890ba791d7fd4ae29a7b3f08c3526105"

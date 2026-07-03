@@ -1,0 +1,27 @@
+# --- Secretos / credenciales — NUNCA subir, ni en repo privado ---
+google-services.json
+*firebase-adminsdk*.json
+firebase_key_temp.json
+*.keystore
+*.jks
+key.properties
+FASE1_SEGURIDAD.md
+
+# --- Android build ---
+android_app/**/build/
+android_app/.gradle/
+android_app/.idea/
+android_app/local.properties
+android_app/*.iml
+android_app/app/*.iml
+android_app/app/release/
+
+# --- Backups / archivos temporales ---
+*.zip
+*.rar
+clean_key_script.js
+D1.txt
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
