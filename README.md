@@ -4,6 +4,23 @@
 
 ---
 
+## 📋 REGLA OBLIGATORIA — Documentar y respaldar TODO en GitHub
+
+**Toda sesión de trabajo sobre esta app (código, fixes, features nuevas) debe:**
+
+1. **Documentarse** — actualizar este `README.md` (o el `.md` correspondiente) explicando qué se cambió y por qué, siguiendo el formato de la sección [🔒 BLINDAJE DEL SISTEMA](#-blindaje-del-sistema--estable-v10-2026-07-03) más abajo.
+2. **Respaldarse en GitHub** — hacer commit + push del código actualizado.
+
+**Repositorio exclusivo de esta app:** **https://github.com/rodzilladev/app** (privado)
+
+- Este repo es **solo para la app de radio** (Worker `app.rodzilla-castro.workers.dev`, `trancendencia_ultimate_pro.html`, proyecto Android `android_app/`).
+- **NUNCA** mezclar aquí código del sitio web principal (`Trancendencia-main` / `trancendencia.com`) — ese vive en su propio repositorio, separado a propósito (ver alerta de `trancendencia-prueba` más abajo).
+- Antes de cada push, revisar que no se cuelen credenciales — ver `.gitignore` (Firebase, admin keys, keystores nunca deben subirse, ni siendo el repo privado).
+
+**Carpeta de trabajo local:** `C:\Users\RODZILLA\Downloads\radio` (código fuente activo, con archivos de respaldo/backups que NO van al repo). El repo en GitHub se mantiene sincronizado con una copia limpia de esta carpeta (sin secretos, sin `.zip`/`.rar`, sin `build/`).
+
+---
+
 ## ⚠️ ALERTA CRÍTICA — NO USAR EL PROYECTO PAGES `trancendencia-prueba` PARA EL SITIO WEB PRINCIPAL
 
 **`MainActivity.java` (línea ~79) carga la app desde:**
